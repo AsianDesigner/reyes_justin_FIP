@@ -7,6 +7,16 @@
     src: url(../assets/ThrowupColor-LightBlue.otf);
   }
 
+@font-face {
+    font-family:'ThrowupColor-Yellow';
+    src: url(../assets/ThrowupColor-Yellow.otf);
+    }
+
+@font-face {
+    font-family: 'ThrowupColor-Pink';
+    src: url(../assets/ThrowupColor-Pink.otf);
+}
+
 body {
     background-image: linear-gradient(#8595CF, #8595CF, #061134);
 }
@@ -17,7 +27,7 @@ body {
     margin: 0;
  }
 
- #main-nav ul li {
+#main-nav ul li {
     display: inline-block;
     text-align: center;
     margin-right: 20px;
@@ -41,5 +51,17 @@ body {
 h2 {
     text-align: center;
     font-family: 'ThrowupColor-LightBlue';
-    font-size: 60px;
+    font-size: 50px;
+}
+
+.vodka_text {
+    font-family: 'ThrowupColor-LightBlue';
+}
+
+.tequila_text {
+    font-family: 'ThrowupColor-Yellow'
+}
+
+.gin_text {
+    font-family: 'ThrowupColor-Pink';
 }
