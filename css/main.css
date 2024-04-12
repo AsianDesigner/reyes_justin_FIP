@@ -8,7 +8,7 @@
   }
 
 body {
-    background-image: linear-gradient(#8595CF, #061134);
+    background-image: linear-gradient(#8595CF, #8595CF, #061134);
 }
 
 #main-nav ul {
@@ -25,7 +25,7 @@ body {
 
 #main-nav ul li a {
     display: inline-block;
-    padding-top: 100px;
+    margin-top: 60px;
     text-align: center;
     text-decoration: none;
     font-family: 'ThrowupColor-Yellow';
@@ -35,6 +35,7 @@ body {
 #header-logo {
     padding: 0;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 h2 {
