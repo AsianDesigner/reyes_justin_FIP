@@ -3,8 +3,8 @@
 }
 
 @font-face {
-    font-family:'ThrowupColor-Yellow';
-    src: url(../assets/ThrowupColor-Yellow.otf);
+    font-family:'ThrowupColor-LightBlue';
+    src: url(../assets/ThrowupColor-LightBlue.otf);
   }
 
 body {
@@ -25,10 +25,10 @@ body {
 
 #main-nav ul li a {
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
     text-decoration: none;
-    font-family: 'ThrowupColor-Yellow';
+    font-family: 'ThrowupColor-LightBlue';
     font-size: 30px;
  }
 
@@ -40,6 +40,6 @@ body {
 
 h2 {
     text-align: center;
-    font-family: 'ThrowupColor-Yellow';
+    font-family: 'ThrowupColor-LightBlue';
     font-size: 60px;
 }
