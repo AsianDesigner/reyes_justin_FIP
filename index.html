@@ -5,54 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <title>Squeezit! - Homepage</title>
 </head>
 <body>
-    <header class="grid-con">
-        <div id="header-logo" class="col-span-1 l-col-span-4">
-            <img href="index.html" src="imgs/brand_logo_blue.svg" alt="squeeze it logo" width="200px" />
+    <h1 class="hidden">Squeezit Site</h1>
+    <header class="grid-con" id="main-header">
+        <div id="header-logo" class="col-span-2">
+            <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
         </div>
-        <nav id="main-nav" class="col-start-2 col-span-3 l-col-start-8 l-col-span-full">
-            <ul>
-                <li><a class="about" href="#">About</a></li>
-                <li><a class="products" href="products.html">Products</a></li>
-                <li><a class="contact" href="contact.html">Contact</a></li>
-            </ul>
+        <div class="col-end-5" id="button-div">
+            <button id="button"></button>
+        </div>
+        <nav id="main-nav" class="col-span-full m-col-start-6 m-col-span-6">
+            <h2 class="hidden">Main Navigation</h2>
+                <ul class="hidden" id="main-nav-ul">
+                    <li><a href="#">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
         </nav>
+        <img src="imgs/cart.svg" alt="your shopping cart" class="col-start-4 m-col-start-12" id="cart">
     </header>
-<section id="grid-con">
-    <div id="hero">
-        <img src="imgs/main_hero.jpg" alt="squeeze the party into your motuh">
+<main>
+    <div class="grid-con" id="main-hero">
+        <h2 class="col-span-full m-col-start-2 m-col-span-4 l-col-start-2 l-col-span-4 main-heading">Squeezit!</h2>
+        <p class="col-span-full m-col-start-2 m-col-span-5 l-col-start-2 l-col-span-5 sub-heading">The choice of the distinguished party person.</p>
+        <p class="col-start-2 col-end-4 m-col-start-2 m-col-span-4 l-col-start-2 l-col-span-4">Proceed to..</p>
+        <div class="col-start-2 col-span-2 m-col-start-2 m-col-span-3 l-col-start-2 l-col-span-3 party-button"><a href="products.html">Party!</a></div>
     </div>
 
-<div id="product-showcase">
-    <h2 class="col-start-2 col-span-2 l-col-start-4 l-col-span-6">Squeezit! With our Products</h2>
-    <div class="bottle_1">
-        <img src="imgs/squeezit_bottle.png" alt="blueberry vodka flavor">
-        <p class="vodka_text">Blueberry Vodka</p>
+    <div class="grid-con" id="about-us">
+        <h3 class="col-span-full section-heading">About Us</h3>
+        <p class="col-span-full m-col-start-2 m-col-end-12 main-body-text">A passion project made by 4 dudes who love Squeezit! and drinking. We proudly bring you the number 1 drink of choice at your local frat parties. Squeeze the flavor and the buzz straight into your mouth at a rate faster than you could imagine.
+            Our wide array of flavors mixed expertly with the alcohol you love to bring any party to life in seconds.</p>
     </div>
 
-    <div class="bottle_2">
-        <img src="imgs/squeezit_yellow.png" alt="blueberry vodka flavor">
-        <p class="tequila_text">Tropical Tequila</p>
+    <div class="grid-con" id="our-selection">
+        <h3 class="col-span-full section-heading">Our Selection</h3>
+        <div class="col-span-full m-col-span-4 selection-cell-m">
+            <a href="products.html" class="col-span-full selections"><img src="imgs/vodka_bottle.png" alt="berry b wild vodka" class="selection-image-m"></a>
+            <h5 class="vodka_text">Berry B. Wilde</h5>
+        </div>
+        <div class="col-span-full m-col-span-4 selection-cell">
+            <a href="products.html" class="col-span-full selections"><img src="imgs/tequila_bottle.png" alt="berry b wild vodka" class="selection-image"></a>
+            <h5 class="tequila_text">Tropical Tequila</h5>
+        </div>
+        <div class="col-span-full m-col-span-4 selection-cell">
+            <a href="products.html" class="col-span-full selections"><img src="imgs/gin_bottle.png" alt="berry b wild vodka" class="selection-image"></a>
+            <h5 class="gin_text">Gin and, well, Juice</h5>
+        </div>
     </div>
 
-    <div class="bottle_3">
-        <img src="imgs/squeezit_pink.png">
-        <p class="gin_text">Raspberry Gin</p>
+    <div class="grid-con" id="promotions">
+        <h3 class="col-span-full section-heading">Promotions</h3>
+        <img src="imgs/promo_image.jpg" alt="Squeeze it promos" class="col-span-full m-col-span-4 promo-m">
+        <img src="imgs/promo_image.jpg" alt="Squeeze it promos" class="m-col-span-4 promo">
+        <img src="imgs/promo_image.jpg" alt="Squeeze it promos" class="m-col-span-4 promo">
     </div>
-</div>
-</section>
+</main>
 
-<footer>
-    <nav id="footer-nav" class="col-start-2 col-span-3 l-col-start-8 l-col-span-full">
+<footer class="grid-con">
+    <nav class="col-span-full footer-nav">
         <ul>
-            <li><a class="about" href="#">About</a></li>
-            <li><a class="products" href="products.html">Products</a></li>
-            <li><a class="contact" href="contact.html">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <img src="imgs/x-twitter.svg" alt="squeeze it twitter" class="col-start-2 col-span-1 m-col-start-6 m-col-span-1 socials">
+    <img src="imgs/instagram.svg" alt="squeeze it instagram" class="col-start-3 col-span-1 m-col-start-7 m-col-span-1 socials">
+    <div id="footer-logo" class="col-start-2 col-span-2 m-col-start-5 m-col-span-4">
+        <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
+    </div>
+    <p class="col-span-full copyright">© 2024 Squeezit. All rights reserved.</p>
 </footer>
-
+<script src="js/main.js"></script>
+<script src="js/burger.js"></script>
 </body>
 </html>
