@@ -50,6 +50,10 @@ h1, h2, h4, h5, .party-button, a {
    font-family: 'ThrowupColor-Yellow';
 }
 
+.transparent {
+  opacity: 0;
+}
+
 /* Header Nav  */
 
 #header-logo {
@@ -81,10 +85,6 @@ button {
     padding: 0;
     margin: 0;
  }
-
-#main-nav {
-   background-color: white;
- }
  
 #main-nav ul li {
    margin: 20px 0;
@@ -99,6 +99,10 @@ button {
  
  #main-nav ul li:last-child {
     margin-bottom: 10px;
+ }
+
+ #cart {
+  display: none;
  }
 
  /* Homepage */
@@ -151,11 +155,15 @@ button {
    display: flex;
  }
 
- .selection-image {
+ .selection-image-m {
    height: 325px;
    margin: 0 auto;
    cursor: pointer;
  }
+
+ .selection-cell {
+  display: none;
+}
 
  h4 {
    text-align: center;
@@ -164,6 +172,14 @@ button {
 
  h5 {
    text-align: center;
+ }
+
+ .promo-m {
+  cursor: pointer;
+ }
+
+ .promo {
+  display: none;
  }
 
 /* Footer Nav */
@@ -203,6 +219,7 @@ button {
 
  .show-details {
    cursor: pointer;
+   font-size: 14px;
  }
 
  .info-box {
@@ -229,32 +246,25 @@ button {
  }
 
  .product-card {
-   background-color: rgba(255, 255, 255, 0.208);
-   border-radius: 60px;
-   margin-bottom: 20px;
-   padding: 10px;
-   padding-bottom: 20px;
- }
-
-.product-card-image {
-   height: 235px;
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-position-y: 50px;
+  background-color: rgba(255, 255, 255, 0.208);
+  border-radius: 60px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#vodka_image {
-   background-image: url(../imgs/vodka_bottle.png);
+.product-card-cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#gin_image {
-   background-image: url(../imgs/gin_bottle.png);
- }
-
-#tequila_image {
-   background-image: url(../imgs/tequila_bottle.png);
- }
+.product-image {
+  height: 235px;
+}
 
 .product-card p {
    padding: 10px 0;
@@ -275,7 +285,7 @@ input {
 }
 
 textarea {
-   height: 400px;
+   height: 300px;
 }
 
 .submit-button {
@@ -291,3 +301,263 @@ textarea {
    cursor: pointer;
    border-radius: 30px;
  }
+
+ /* Media Queries */
+
+@media screen and (min-width: 768px) {
+
+/* Tablet Homepage */
+
+#button-div {
+  display: none;
+}
+
+#main-nav-ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-nav {
+  background-color: none;
+}
+
+#main-nav ul li {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+#main-nav ul li a {
+  display: inline-block;
+  font-size: 32px;
+}
+
+#cart {
+  display: block;
+  height: 65px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+  #main-hero p {
+    text-align: left;
+  }
+
+  .party-button {
+    text-align: center;
+    background-color: red;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  #main-hero {
+    background-image: url(../imgs/main_hero.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .section-heading {
+    font-size: 32px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .selection-image-m {
+    height: 325px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .selection-image {
+    height: 325px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .selection-cell {
+    display: block;
+  }
+
+  .promo {
+    display: block;
+    cursor: pointer;
+   }
+
+  .footer-nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+/* Tablet Product Page */
+
+.product-card {
+  flex-direction: row;
+  padding: 50px;
+}
+
+.product-card-cont {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-right: 200px;
+}
+
+.product-image {
+  height: 235px;
+}
+
+.product-card p {
+   padding: 10px 0;
+   text-align: left;
+}
+
+.show-details-ul {
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  margin: 0;
+}
+
+/* Tablet Contact Page */
+
+input, textarea {
+  border-radius: 16px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5px;
+  font-family: 'Fredoka', Helvetica, sans-serif;
+}
+
+.name, .phone-number {
+  width: 383px;
+}
+
+input {
+  height: 70px;
+}
+
+textarea {
+  height: 300px;
+}
+
+.submit-button {
+  text-align: center;
+  background-color: red;
+  height: 60px;
+  width: 30%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+}
+
+@media screen and (min-width: 1200px) { 
+
+  /* Desktop Homepage */
+  
+  #main-hero {
+    background-image: url(../imgs/main_hero.png);
+    background-size: 40%;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+ 
+  .main-heading {
+    text-align: center;
+    font-size: 128px;
+    margin: 25px 0;
+  } 
+
+  #main-hero p {
+    text-align: left;
+  }
+
+  .party-button {
+    text-align: center;
+    background-color: red;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+  }
+
+  .section-heading {
+    font-size: 42px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .main-body-text {
+    text-align: center;
+    font-size: 32px;
+  }
+ 
+
+
+  /* Desktop Product Page */
+
+  .product-card {
+    flex-direction: row;
+    padding: 50px;
+  }
+
+  .product-card-cont {
+    padding-right: 0;
+  }
+
+  /* Desktop Contact Page */
+
+  input, textarea {
+    border-radius: 16px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-family: 'Fredoka', Helvetica, sans-serif;
+  }
+  
+  .name, .phone-number {
+    width: 583px;
+  }
+  
+  input {
+    height: 70px;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  .submit-button {
+    text-align: center;
+    background-color: red;
+    height: 60px;
+    width: 30%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  }

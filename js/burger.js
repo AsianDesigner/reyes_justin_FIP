@@ -1,14 +1,12 @@
 (function(){
-	"use strict";	
-	console.log("fired");
+    console.log("Burger Flipping Time");
 
-	let button = document.querySelector("#button");
-	let burgerCon = document.querySelector("#burger-menu");
+    let button = document.querySelector("#button");
+    let mainNav = document.querySelector("#main-nav-ul");
 
-	function hamburgerMenu() {
-		burgerCon.classList.toggle("slide-toggle");
-		button.classList.toggle("expanded");
-	};
+    function hamburgerMenu() {
+        mainNav.classList.toggle("hidden");
+    };
 
-	button.addEventListener("click", hamburgerMenu, false);		
+    button.addEventListener("click", hamburgerMenu, false);
 })();

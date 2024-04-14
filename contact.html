@@ -16,32 +16,31 @@
         <div id="header-logo" class="col-span-2">
             <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
         </div>
-        <div class="col-end-5">
+        <div class="col-end-5" id="button-div">
             <button id="button"></button>
         </div>
-        <nav id="main-nav" class="col-span-full">
+        <nav id="main-nav" class="col-span-full m-col-start-6 m-col-span-6">
             <h2 class="hidden">Main Navigation</h2>
-            <div id="burger-menu">
-                <ul>
+                <ul class="hidden" id="main-nav-ul">
                     <li><a href="#">About</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
         </nav>
+        <img src="imgs/cart.svg" alt="your shopping cart" class="col-start-4 m-col-start-12" id="cart">
     </header>
 
     <main>
         <div class="grid-con" id="contact-main">
             <h2 class="col-span-full main-heading">Reach out to <br>Us!</h2>
 
-            <div id="contact-form" class="col-span-full l-col-start-6 l-col-end-12">
+            <div id="contact-form" class="col-span-full">
                 <form method="POST" enctype="text/plain">
-                    <input name="email" type="text" placeholder="Email*">
-                    <input name="name" type="text" placeholder="Name (Optional)">
-                    <input name="phoneNumber" type="text" required placeholder="Phone number (Optional)">
+                    <input class="email" name="email" type="text" placeholder="Email*">
+                    <input class="name" name="name" type="text" placeholder="Name (Optional)">
+                    <input class="phone-number" name="phoneNumber" type="text" required placeholder="Phone number (Optional)">
                     <textarea name="comments" placeholder="Comments/Suggestions"></textarea>
-                    <div class="col-start-2 col-span-2 submit-button"><a href="#">Submit!</a></div>
+                    <div class="col-start-2 col-span-2 m-col-start-5 m-col-span-4 submit-button"><a href="#">Submit!</a></div>
                 </form>
             </div>
         </div>
@@ -55,13 +54,13 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <img src="imgs/x-twitter.svg" alt="squeeze it twitter" class="col-start-2 col-span-1 socials">
-        <img src="imgs/instagram.svg" alt="squeeze it instagram" class="col-start-3 col-span-1 socials">
-        <div id="footer-logo" class="col-start-2 col-span-2">
+        <img src="imgs/x-twitter.svg" alt="squeeze it twitter" class="col-start-2 col-span-1 m-col-start-6 m-col-span-1 socials">
+        <img src="imgs/instagram.svg" alt="squeeze it instagram" class="col-start-3 col-span-1 m-col-start-7 m-col-span-1 socials">
+        <div id="footer-logo" class="col-start-2 col-span-2 m-col-start-5 m-col-span-4">
             <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
         </div>
         <p class="col-span-full copyright">© 2024 Squeezit. All rights reserved.</p>
-    </footer>   
+    </footer>
 <script src="js/main.js"></script>
 <script src="js/burger.js"></script>
 </body>
