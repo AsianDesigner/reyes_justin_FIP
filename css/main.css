@@ -323,10 +323,6 @@ ul {
   margin: 0;
 }
 
-#main-nav {
-  background-color: none;
-}
-
 #main-nav ul li {
   display: inline-block;
   margin: 20px 0;
