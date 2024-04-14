@@ -5,28 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <title>Squeezit! - Homepage</title>
 </head>
 <body>
+    <h1 class="hidden">Squeezit Site</h1>
     <header class="grid-con" id="main-header">
         <div id="header-logo" class="col-span-2">
-            <img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo" width="200px" height="60px">
+            <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
         </div>
-        <nav id="main-nav" class="col-end-5">
-            <h2 class="hidden">Main Navigation</h2>
+        <div class="col-end-5">
             <button id="button"></button>
-            <div id="burger-con">
+        </div>
+        <nav id="main-nav" class="col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+            <div id="burger-menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Packages</a></li>
-                    <li><a href="#">Dining</a></li>
-                    <li><a href="#">Spa Activities</a></li>
-                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+<main>
+    <div class="grid-con" id="main-hero">
+        <h2 class="col-span-full main-heading">Squeezit!</h2>
+        <p class="col-span-full sub-heading">The choice of the distinguished party person.</p>
+        <p class="col-start-2 col-end-4">Proceed to..</p>
+        <div class="col-start-2 col-span-2 party-button"><a href="products.html">Party!</a></div>
+    </div>
 
+    <div class="grid-con" id="about-us">
+        <h3 class="col-span-full section-heading">About Us</h3>
+        <p class="col-span-full main-body-text">A passion project made by 4 dudes who love Squeezit! and drinking. We proudly bring you the number 1 drink of choice at your local frat parties. Squeeze the flavor and the buzz straight into your mouth at a rate faster than you could imagine.
+            Our wide array of flavors mixed expertly with the alcohol you love to bring any party to life in seconds.</p>
+    </div>
+
+    <div class="grid-con" id="our-selection">
+        <h3 class="col-span-full section-heading">Our Selection</h3>
+        <a href="products.html" class="col-span-full selections"><img src="imgs/vodka_bottle.png" alt="berry b wild vodka" class="selection-image"></a>
+        <h5 class="col-span-full vodka_text">Berry B. Wilde</h5>
+    </div>
+
+    <div class="grid-con" id="promotions">
+        <h3 class="col-span-full section-heading">Promotions</h3>
+        <img src="imgs/promo_image.jpg" alt="Squeeze it promos" class="col-span-full">
+    </div>
+</main>
+
+<footer class="grid-con">
+    <nav class="col-span-full footer-nav">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="imgs/x-twitter.svg" alt="squeeze it twitter" class="col-start-2 col-span-1 socials">
+    <img src="imgs/instagram.svg" alt="squeeze it instagram" class="col-start-3 col-span-1 socials">
+    <div id="footer-logo" class="col-start-2 col-span-2">
+        <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
+    </div>
+    <p class="col-span-full copyright">© 2024 Squeezit. All rights reserved.</p>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/burger.js"></script>
 </body>
 </html>

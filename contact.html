@@ -5,13 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <title>Squeezit! - Contact Us!</title>
 </head>
 <body>
-    <header class="grid-con">
-        <div id="header-logo" class="col-span-1"></div>
+    <h1 class="hidden">Squeezit Contact</h1>
+    <header class="grid-con" id="main-header">
+        <div id="header-logo" class="col-span-2">
+            <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
+        </div>
+        <div class="col-end-5">
+            <button id="button"></button>
+        </div>
+        <nav id="main-nav" class="col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+            <div id="burger-menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    
+    <main>
+        <div class="grid-con" id="contact-main">
+            <h2 class="col-span-full main-heading">Reach out to <br>Us!</h2>
+
+            <div id="contact-form" class="col-span-full l-col-start-6 l-col-end-12">
+                <form method="POST" enctype="text/plain">
+                    <input name="email" type="text" placeholder="Email*">
+                    <input name="name" type="text" placeholder="Name (Optional)">
+                    <input name="phoneNumber" type="text" required placeholder="Phone number (Optional)">
+                    <textarea name="comments" placeholder="Comments/Suggestions"></textarea>
+                    <div class="col-start-2 col-span-2 submit-button"><a href="#">Submit!</a></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="grid-con">
+        <nav class="col-span-full footer-nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="imgs/x-twitter.svg" alt="squeeze it twitter" class="col-start-2 col-span-1 socials">
+        <img src="imgs/instagram.svg" alt="squeeze it instagram" class="col-start-3 col-span-1 socials">
+        <div id="footer-logo" class="col-start-2 col-span-2">
+            <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
+        </div>
+        <p class="col-span-full copyright">© 2024 Squeezit. All rights reserved.</p>
+    </footer>   
+<script src="js/main.js"></script>
+<script src="js/burger.js"></script>
 </body>
 </html>

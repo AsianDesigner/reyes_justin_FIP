@@ -5,12 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <title>Squeezit! - Products</title>
 </head>
 <body>
-    <header class="grid-con">
-        <div id="header-logo" class="col-span-1"></div>
+    <h1 class="hidden">Squeezit Products</h1>
+    <header class="grid-con" id="main-header">
+        <div id="header-logo" class="col-span-2">
+            <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
+        </div>
+        <div class="col-end-5">
+            <button id="button"></button>
+        </div>
+        <nav id="main-nav" class="col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+            <div id="burger-menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-     
+    <main>
+        <div class="grid-con" id="product-hero">
+            <h2 class="col-span-full main-heading">Squeeze the <br>Party into your <br>mouth!</h2>
+            <img src="imgs/product_hero.png" alt="Squeeze it is here to party!" class="col-span-full product-hero">
+        </div>
+
+        <div class="grid-con" id="product-lineup">
+            <h3 class="col-span-full section-heading">Browse our Products</h3>
+            <div class="col-span-full product-card">
+                <div class="product-card-image" id="vodka_image"></div>
+                <h4 class="vodka_text">Berry B. Wilde</h4>
+                <p class="col-span-full product-card-text">Unleash something wilder than the berries used to make this party drink!</p>
+                    <div class="info-box">
+                    <p class="show-details">Show Details</p>
+                        <ul>
+                            <li>Flavor: Blueberry</li>
+                            <li>Alcohol Content: Vodka</li>
+                            <li>6.8oz</li>
+                        </ul>
+                    </div>
+                    <div class="col-start-2 col-span-2 buy-button"><a href="#">Buy it!</a></div>
+            </div>
+
+            <div class="col-span-full product-card">
+                <div class="product-card-image" id="gin_image"></div>
+                <h4 class="gin_text">Gin and, well, Juice</h4>
+                <p class="col-span-full product-card-text">Rollin' down the street, sippin' on gin and, well, juice.</p>
+                    <div class="info-box">
+                    <p class="show-details">Show Details</p>
+                        <ul>
+                            <li>Flavor: Raspberry</li>
+                            <li>Alcohol Content: Gin</li>
+                            <li>6.8oz</li>
+                        </ul>
+                    </div>
+                    <div class="col-start-2 col-span-2 buy-button"><a href="#">Buy it!</a></div>
+            </div>
+
+            <div class="col-span-full product-card">
+                <div class="product-card-image" id="tequila_image"></div>
+                <h4 class="tequila_text">Tropical Tequila</h4>
+                <p class="col-span-full product-card-text">Taste all the flavors of the beach and go wild with this fruity tequila blend!</p>
+                    <div class="info-box">
+                    <p class="show-details">Show Details</p>
+                        <ul>
+                            <li>Flavor: Mango and Pineapple</li>
+                            <li>Alcohol Content: Tequila</li>
+                            <li>6.8oz</li>
+                        </ul>
+                    </div>
+                    <div class="col-start-2 col-span-2 buy-button"><a href="#">Buy it!</a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="grid-con">
+        <nav class="col-span-full footer-nav">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="imgs/x-twitter.svg" alt="squeeze it twitter" class="col-start-2 col-span-1 socials">
+        <img src="imgs/instagram.svg" alt="squeeze it instagram" class="col-start-3 col-span-1 socials">
+        <div id="footer-logo" class="col-start-2 col-span-2">
+            <a href="index.html"><img src="imgs/brand_logo_blue.svg" alt="Squeeze it logo"></a>
+        </div>
+        <p class="col-span-full copyright">© 2024 Squeezit. All rights reserved.</p>
+    </footer>
+
+<script src="js/main.js"></script>
+<script src="js/burger.js"></script>
 </body>
 </html>
